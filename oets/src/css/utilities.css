@@ -1,0 +1,45 @@
+/*
+ * Here is where you can define your custom utility classes.
+ *
+ * We wrap them in the `utilities` @layer directive, so
+ * that Tailwind moves them to the correct location.
+ *
+ * More info:
+ * https://tailwindcss.com/docs/functions-and-directives#layer
+*/
+
+@layer utilities {
+  .break-word {
+    word-break: break-word;
+  }
+  .text-primary-100 {
+    color: #cab199
+  }
+  .text-primary-200 {
+    color: #d9af82
+  }
+  .text-primary-300 {
+    color: #96816c
+  }
+  .text-primary-400 {
+    color: #625244
+  }
+  .text-primary-500 {
+    color: #32251c
+  }
+  .bg-primary-100 {
+    background-color: #cab199
+  }
+  .bg-primary-200 {
+    background-color: #d9af82
+  }
+  .bg-primary-300 {
+    background-color: #96816c
+  }
+  .bg-primary-400 {
+    background-color: #625244
+  }
+  .bg-primary-500 {
+    background-color: #32251c
+  }
+}

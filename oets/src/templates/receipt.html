@@ -1,0 +1,79 @@
+---
+title: "Oasis payment receipt"
+preheader: "Oasis payment receipt"
+bodyClass: bg-slate-50
+---
+
+<x-main>
+  <div class="bg-slate-50 sm:px-4 font-sans">
+    <table align="center">
+      <tr>
+        <td class="w-[552px] max-w-full">
+          <div class="my-12 sm:my-8 text-center">
+
+            <div class="text-center">
+              <img src="https://firebasestorage.googleapis.com/v0/b/flutterfirebaseauth-1c71a.appspot.com/o/images%2Flogo.png?alt=media&token=023c6c8e-409f-47c2-80f5-91482c166f6e" width="150" alt="oasis hostel">
+              <h1 class="text-primary-500">Oasis Hostel</h1>
+            </div>
+
+          </div>
+
+          <table class="w-full">
+            <tr>
+              <td class="p-12 sm:px-6 text-base text-slate-700 bg-white rounded shadow-sm">
+                <h1 class="m-0 mb-6 text-2xl sm:leading-8 text-black font-semibold">
+                  Hello { data.username },
+                </h1>
+
+                <p class="m-0 leading-6">
+                  Your payment has been completed successfully and you've been assigned to room { data.room_number }.
+                </p>
+
+                <x-spacer height="24px" />
+
+                <div class="bg-primary-400 text-white p-5">
+                  <table class="w-full">
+                    <tr>
+                      <td class="text-left pr-5">Amount Paid</td>
+                      <td class="text-3xl text-right">{ data.amount_paid }</td>
+                    </tr>
+                  </table>
+                </div>
+
+                <x-spacer height="24px" />
+                
+                <p class="m-0 leading-6">
+                  You can download your official receipt from the mobile app, just navigate to My Room page and Tap on the Payment Card. 
+                </p>
+                
+                <!-- <x-spacer height="24px" /> -->
+
+                <x-divider space-y="32px" class="bg-slate-200" />
+
+                <p class="m-0">
+                  If you didn't book a room with the hostel, please contact us on 0548876758.
+                  <br>
+                  <br>
+                  Thanks, <br />The Oasis Hostel Team
+                </p>
+              </td>
+            </tr>
+            <tr role="separator">
+              <td class="leading-12">&zwj;</td>
+            </tr>
+            <tr>
+              <td class="text-center text-slate-600 text-xs px-6">
+
+                <p class="m-0 mb-4 uppercase">
+                  Powered by Oasis
+                </p>
+
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <x-spacer height="120px" />
+  </div>
+</x-main>
